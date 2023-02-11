@@ -1,0 +1,24 @@
+@font-face {
+    font-family: kanit;
+    src: url(../src/assets/Anek_Devanagari/static/AnekDevanagari/AnekDevanagari-Medium.ttf);
+}
+@font-face {
+    font-family: letraIconos;
+    src: url(../src/assets/Righteous-Regular.ttf);
+}
+
+
+:root{
+    --color-primario:#4070F4;
+    --color-secundario:#0E2431;
+    
+}
+
+nav{
+    font-family: kanit;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+

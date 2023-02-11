@@ -1,0 +1,121 @@
+/* Estilos del contenedor principal de contacto */
+.contacto_contenedor{
+    text-align: center;
+    height: 590px;
+    animation: aparece 1500ms;
+    margin-top: 30px;
+}
+
+/* Estilos del titulo "Contacto" */
+.contacto_contenedor h2{
+    color: var(--color-primario);
+    
+}
+
+/* Estilos del "ponte en contacto" */
+.contacto_contenedor p{
+    color: var(--color-secundario);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
+/* Estilos del contenedor de informaciòn */
+.contacto_info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+
+/* Animaciòn de carga de componente*/
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Estilos del contenedor de datos de ubicaciòn y email */
+
+.contacto_datos{
+    text-align: left;
+}
+
+
+.contacto_datos p span{
+    color: var(--color-primario);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.contacto_datos .email{
+    padding-left: 4px;
+}
+
+
+
+/* Estilos contenedor redes */
+
+
+
+/* Estilos del p de redes sociales */
+.contacto_redes{
+    color: var(--color-secundario);
+    padding-top: 5px;
+}
+
+/* Estilos del "redes sociales" */
+.contacto_redes p span{
+    color: var(--color-primario);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* Estilos de icono github y linkedin*/
+.contacto_icono{
+    width: 50px;
+    height: auto;
+    margin: 10px;
+    transition: all 300ms;
+    
+}
+
+.contacto_icono:hover{
+    transform: scale(1.1);
+    
+}
+
+
+/* MEDIA QUERYS */
+
+
+@media (max-width:559px) {
+    .contacto_contenedor{
+
+     height: auto;
+
+    }
+    .contacto_info{
+        margin-top: 40px;
+        font-size: 0.8em;
+    }
+    
+
+    .contacto_datos{
+        text-align: center;
+        margin: 0px 50px 0px 50px;
+    }
+
+    .contacto_redes{
+        text-align:center;
+        margin: 40px 50px 40px 50px;
+    }
+
+}
+
+
+

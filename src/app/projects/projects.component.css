@@ -1,0 +1,98 @@
+.caja_projects{
+    text-align: center;
+    height: auto;
+    min-height: 590px;
+    animation: aparece 1500ms;
+    margin-top: 30px;
+
+}
+
+.caja_projects h2{
+    color: var(--color-primario);
+    
+}
+
+.proyectos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    margin: 20px 0px 20px 0px;
+   
+
+}
+
+.proyectos .proyecto{
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-primario);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin:10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+
+}
+
+.proyectos .proyecto a{
+
+    height: 40px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-left: 30px;
+    background-color: var(--color-secundario);
+    transition: all 300ms;
+    font-weight: 600;
+    
+}
+
+
+.proyectos .proyecto a:hover{
+  transform: scale(1.1);
+}
+
+.proyectos .proyecto a img{
+    width: 20px;
+    height: 20px;
+}
+
+.proyectos .proyecto img{
+    width: 200px;
+    height: 200px;
+    flex-grow: 2;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media(max-width:360px){
+    .proyectos .proyecto{
+        width: 250px;
+        height: 250px;
+        font-size: 0.8em;
+        margin: 10px;
+    }
+
+    .proyectos .proyecto img{
+        width: 150px;
+        height: 150px;      
+    }
+    .proyectos .proyecto a{
+        margin: 0px 10px 0px 10px;
+
+        
+    }
+    
+}

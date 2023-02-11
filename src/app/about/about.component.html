@@ -1,0 +1,90 @@
+<div class="caja_about">
+
+    <h2>
+        Sobre mi
+    </h2>
+
+    <div class="contenedor">
+        <div class="caja_img">
+            <img class="img" src="../../assets/imagenCarla.png" alt="">
+        </div>
+
+        <div class="texto">
+            <p>Me gusta levantarme temprano, preparar mi café y comenzar a programar. He encontrado en ello un momento de paz y disfrute. Me ha costado años encontrarlo, pero he encontrado mi vocación y espero desarrollarla toda mi vida.  Ver reflejados mis conocimientos y mi imaginación en un sitio web me genera mucha satisfacción. Pensando en un futuro lejano, en el que quizás pensara en  aprender un ambito nuevo, creo que sería la ciberseguridad. Por ahora sólo quiero fortalecer y seguir adquiendo conocimentos en el ambito web.
+                
+            </p>
+        </div>
+
+    </div>
+
+
+ <div class="tecnologias">
+    <h3>Habilidades</h3>
+
+    <div class="contenedor_skills">
+
+ 
+        <div class="skills">
+        <img class="img_icono" (mouseover)="this.mostrarHtml = true"  (mouseleave)="this.mostrarHtml = false"  src="../../assets/Icono_html.png" alt="Icono html">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarHtml == true, 'ocultar' : this.mostrarHtml == false}"> {{this.html}} </p>
+        </div>
+
+        <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarCss = true"  (mouseleave)="this.mostrarCss = false" src="../../assets/Icono_css.png" alt="Icono css">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarCss == true, 'ocultar' : this.mostrarCss == false}"> {{this.css}} </p>
+        </div>
+
+        <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarJS = true"  (mouseleave)="this.mostrarJS = false" src="../../assets/Icono_js.png" alt="Icono javascript">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarJS == true, 'ocultar' : this.mostrarJS == false}"> {{this.js}} </p>
+        </div>
+
+
+        <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarBootstrap = true"  (mouseleave)="this.mostrarBootstrap = false"  src="../../assets/Icono_bootstrap.png" alt="Icono bootstrap">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarBootstrap == true, 'ocultar' : this.mostrarBootstrap == false}"> {{this.bs}} </p>
+        </div>
+
+
+        <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarAngular = true"  (mouseleave)="this.mostrarAngular = false" src="../../assets/Icono_angular.png" alt="Icono angular">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarAngular == true, 'ocultar' : this.mostrarAngular == false}"> {{this.angular}} </p>
+        </div>
+
+    </div>
+    <div class="contenedor_skills">
+
+
+        <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarJava = true"  (mouseleave)="this.mostrarJava = false" src="../../assets/Icono_java.png" alt="Icono java">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarJava == true, 'ocultar' : this.mostrarJava == false}"> {{this.java}} </p>
+        </div>
+
+        <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarMysql = true"  (mouseleave)="this.mostrarMysql = false" src="../../assets/Icono_mysql.png" alt="Icono mysql">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarMysql == true, 'ocultar' : this.mostrarMysql == false}"> {{this.mysql}} </p>
+       </div>
+
+
+       <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarGit = true"  (mouseleave)="this.mostrarGit = false" src="../../assets/Icono_git.png" alt="Icono git">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarGit == true, 'ocultar' : this.mostrarGit == false}"> {{this.git}} </p>
+       </div>
+
+
+       <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarJquery = true"  (mouseleave)="this.mostrarJquery = false" src="../../assets/icono_jquery.png" alt="Icono jquery">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarJquery == true, 'ocultar' : this.mostrarJquery == false}"> {{this.jquery}} </p>
+        </div>
+
+
+        <div class="skills">
+        <img class="img_icono"  (mouseover)="this.mostrarTS = true"  (mouseleave)="this.mostrarTS = false" src="../../assets/icono_typescript.png" alt="Icono typescript">
+        <p [ngClass] ="{ 'mostrar' : this.mostrarTS == true, 'ocultar' : this.mostrarTS == false}"> {{this.ts}} </p>
+        </div>
+
+    
+    </div>
+</div>
+
+</div>

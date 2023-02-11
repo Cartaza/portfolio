@@ -1,0 +1,160 @@
+.caja_about{
+    text-align: center;
+    height: auto;
+    animation: aparece 1500ms;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.caja_about h2{
+    color: var(--color-primario);
+    
+    
+}
+
+.caja_img{
+    padding-top: 70px;
+}
+
+.img{
+    width: 300px;
+    height: auto;
+    
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.texto{
+    text-align: justify;
+    letter-spacing: 1px;
+         
+}
+
+.texto p{
+    width: 400px;
+    padding-top: 70px;
+    
+    
+}
+
+
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+/* Estilos del contenedor general de habilidades */
+
+.tecnologias{
+   margin: 100px 0px 100px 0px;
+}
+
+/* Estilos del titulo "habilidades" */
+.tecnologias h3{
+    color: var(--color-primario);
+
+}
+
+/* Estilos del contenedor de los div de skill */
+.tecnologias .contenedor_skills{
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   margin: 0px auto;
+   margin-top: 60px;
+   width: 80%;
+}
+
+
+/* Estilos de los iconos */
+.contenedor_skills .img_icono{
+    transition: all 400ms;
+   
+}
+
+.contenedor_skills .img_icono:hover,
+.contenedor_skills .img_icono:active{
+    transform: scale(1.2);
+}
+
+
+/*Estilos contenedor individual de iconos*/
+
+.skills{
+    width: 70px ;
+    height: 100px;
+}
+
+
+.skills .img_icono{
+    width: 50px ;
+   }
+
+
+   .skills p{
+   padding-top: 10px;
+   }
+
+
+/*Detalle de iconos, mostrar y ocultar*/
+
+.mostrar{
+  display: block;
+  color: var(--color-secundario);
+  font-family: letraIconos;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.ocultar{
+    display: none;
+}
+
+
+
+/* MEDIA QUERYS */
+
+@media(max-width:449px){
+    .texto p{
+        width: auto;
+        margin: 20px;
+    }
+    .img{
+        width: 200px;
+    }
+
+    .skills{
+        width: 250px ;
+        height: 100px;
+    }
+    
+    .skills .img_icono{
+    width: 60px ;
+    margin-bottom: 20px;
+    }
+
+    .tecnologias{
+        margin: 50px 0px 50px 0px;
+     }
+     .tecnologias .contenedor_skills{
+        margin-top: 0px;
+
+     }
+     .tecnologias h3{
+        margin-bottom: 40px;   
+    }
+    .skills p{
+        display: none;
+        }
+    
+}

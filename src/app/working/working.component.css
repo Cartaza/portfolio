@@ -1,0 +1,46 @@
+.contenedor_construccion{
+    animation: aparece 1500ms;
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    color: var(--color-secundario);
+}
+
+
+
+/* Animaciòn general al iniciar */
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.contenedor_construccion h1{
+    font-family: kanit;
+    color: var(--color-primario);
+}
+
+.contenedor_construccion h2{
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 400px) {
+
+    .contenedor_construccion{
+        margin-bottom: 30px;
+        padding: 10px;
+
+    }
+    
+    .contenedor_construccion img{
+        width: 200px;
+
+    }
+    
+}
